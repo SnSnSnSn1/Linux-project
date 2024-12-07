@@ -1,5 +1,6 @@
 // test/test_net.c
-#include "../src/net.c"  // 引入 net.c 中的函数
+//#include "../src/net.c"  // 引入 net.c 中的函数
+#include "../src/utils.h"
 
 int main() {
     printf("开始网络使用情况测试...\n");

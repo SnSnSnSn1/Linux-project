@@ -4,27 +4,27 @@
 #include <unistd.h>
 
 void run_cpu_test() {
-    execlp("./test/cpu_test", "cpu_test", (char *)NULL);
+    execlp("./bin/cpu_test", "cpu_test", (char *)NULL);
     perror("Failed to execute cpu_test");
 }
 
 void run_disk_test() {
-    execlp("./test/disk_test", "disk_test", (char *)NULL);
+    execlp("./bin/disk_test", "disk_test", (char *)NULL);
     perror("Failed to execute disk_test");
 }
 
 void run_memory_test() {
-    execlp("./test/memory_test", "memory_test", (char *)NULL);
+    execlp("./bin/memory_test", "memory_test", (char *)NULL);
     perror("Failed to execute memory_test");
 }
 
 void run_net_test() {
-    execlp("./test/net_test", "net_test", (char *)NULL);
+    execlp("./bin/net_test", "net_test", (char *)NULL);
     perror("Failed to execute net_test");
 }
 
 void run_io_test() {
-    execlp("./test/test_IO", "test_IO", (char *)NULL);
+    execlp("./bin/IO_test", "test_IO", (char *)NULL);           // ! 
     perror("Failed to execute test_IO");
 }
 

@@ -1,5 +1,9 @@
 // test/test_IO.c
-#include "../src/IO.c"  // 引入 IO.c 中的函数
+//#include "../src/IO.h"  // 引入 IO.c 中的函数
+#include "../src/utils.h"
+
+
+
 
 int main() {
     printf("开始 I/O 使用情况测试...\n");

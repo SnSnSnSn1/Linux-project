@@ -1,5 +1,7 @@
 // test/test_disk.c
-#include "../src/disk.c"  // 引入disk.c中的函数
+//#include "../src/disk.c"  // 引入disk.c中的函数
+#include "../src/utils.h"
+
 
 int main() {
     printf("开始磁盘使用率测试...\n");

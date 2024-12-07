@@ -1,5 +1,8 @@
 // test/test_memory.c
-#include "../src/memory.c"  // 引入memory.c中的函数
+//#include "../src/memory.c"  // 引入memory.c中的函数
+#include "../src/utils.h"
+
+
 
 int main() {
     printf("开始内存使用率测试...\n");

@@ -2,9 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "utils.h"
 
-// 函数声明
-void print_memory_usage();
 
 // 读取/proc/meminfo文件并解析内存信息
 void read_memory_info(long *total, long *free, long *buffers, long *cached) {

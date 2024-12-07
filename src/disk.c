@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "utils.h"
 
 void get_disk_usage() {
     FILE *fp;

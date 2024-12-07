@@ -1,9 +1,7 @@
 // src/IO.c
 #include <stdio.h>
 #include <stdlib.h>
-
-// 函数声明
-void print_io_usage();
+#include "utils.h"
 
 // 使用 iostat 命令获取磁盘 I/O 统计信息
 void print_io_usage() {

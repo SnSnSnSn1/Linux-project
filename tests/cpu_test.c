@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "../src/cpu.c"  // 引入cpu.c中的函数
+#include "../src/utils.h"
+//#include "../src/cpu.c"  // 引入cpu.c中的函数
 
 int main() {
     printf("开始CPU使用率测试...\n");

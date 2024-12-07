@@ -2,9 +2,8 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
+#include "utils.h"
 
-// 函数声明
-void print_cpu_usage();
 
 // 读取/proc/stat文件并解析CPU时间
 void read_cpu_times(long double *user, long double *nice, long double *system, long double *idle, long double *iowait, long double *irq, long double *softirq, long double *steal) {

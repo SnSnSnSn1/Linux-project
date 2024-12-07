@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "utils.h"
 void print_network_usage() {
     FILE *fp = popen("nethogs", "r");
     if (fp == NULL) {
