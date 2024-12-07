@@ -2,10 +2,15 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <sys/types.h>
 
 void run_cpu_test() {
+    pid_t pid = fork();
+    if(pid == 0){
     execlp("./bin/cpu_test", "cpu_test", (char *)NULL);
     perror("Failed to execute cpu_test");
+    exit(0);
+    }
 }
 
 void run_disk_test() {
