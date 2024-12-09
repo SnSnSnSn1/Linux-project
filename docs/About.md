@@ -3,10 +3,9 @@
 项目结构清晰，分为源代码目录（src）、测试代码目录（tests）以及文档和配置文件。
 
 # 文档和支持
-README.md 提供了项目的使用说明。<br>
-About.txt 提供了项目的基本信息和详细描述。<br>
-LICENSE 文件包含了项目的使用许可信息。<br>
-run.sh 脚本文件更加方便执行监视器。（挚友IHG所编写）
+README.md 提供了项目的使用说明。
+About.txt 提供了项目的基本信息和详细描述。
+LICENSE 文件包含了项目的使用许可信息。
 
 # 功能概述：
 1. pro版能够监控和展示系统中的CPU、磁盘、内存、网络和I/O使用情况。项目由多个模块组成，每个模块负责收集特定类型的系统资源信息，并通过命令行界面展示给用户。
@@ -15,35 +14,36 @@ run.sh 脚本文件更加方便执行监视器。（挚友IHG所编写）
 
 3. 'run.sh' 脚本提供了一个简单的菜单系统，允许用户选择编译并执行两个不同的程序（`main` 和 `main_test`），或者退出脚本。用户输入相应的选项后，脚本会编译相应的源文件并执行生成的程序，同时检查编译是否成功并给出相应的提示。
 
+
 # 项目结构：
 项目源码/
+├── docs/                     # 文档目录
+│   ├── About.md             # 项目简介
+│   ├── LICENSE              # 许可证文件
+│   ├── makefile             # 文档目录的makefile
+│   └── README.md            # 自述文件
 │
-├── docs/
-│   ├── About.md
-│   ├── LICENSE
-│   ├── makefile
-│   └── README.md
+├── src/                      # 源代码目录
+│   ├── cpu.c                # CPU监控源代码
+│   ├── disk.c               # 磁盘监控源代码
+│   ├── IO.c                 # 输入输出监控源代码
+│   ├── memory.c             # 内存监控源代码
+│   ├── net.c                # 网络监控源代码
+│   └── utils.h              # 通用工具函数头文件
 │
-├── src/
-│   ├── cpu.c
-│   ├── disk.c
-│   ├── IO.c
-│   ├── memory.c
-│   ├── net.c
-│   └── utils.h
+├── tests/                    # 测试代码目录
+│   ├── cpu_test.c           # CPU监控测试代码
+│   ├── disk_test.c          # 磁盘监控测试代码
+│   ├── IO_test.c            # 输入输出监控测试代码
+│   ├── memory_test.c        # 内存监控测试代码
+│   ├── net_test.c           # 网络监控测试代码
+│   └── main_tests.c         # 主测试程序源代码
 │
-├── tests/
-│   ├── cpu_test.c
-│   ├── disk_test.c
-│   ├── IO_test.c
-│   ├── memory_test.c
-│   ├── net_test.c
-│   └── main_tests.c
-│
-├── run.sh
-├── makefile
-├── main.c
-└── main_tests.c
+├── run.sh                    # 运行脚本
+├── makefile                  # 项目makefile
+├── main.c                    # 主程序源代码
+└── main_tests.c              # 主测试程序源代码
+
 
 
 # 代码分析：
