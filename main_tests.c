@@ -29,8 +29,8 @@ void run_net_test() {
 }
 
 void run_io_test() {
-    execlp("./bin/IO_test", "test_IO", (char *)NULL);           // ! 
-    perror("Failed to execute test_IO");
+    execlp("./bin/IO_test", "IO_test", (char *)NULL);           // ! 
+    perror("Failed to execute IO_test");
 }
 
 int main() {
