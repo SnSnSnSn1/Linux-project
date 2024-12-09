@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void print_network_usage() {
-    FILE *fp = popen("nethogs", "r");
+    FILE *fp = popen("netstat -a | more", "r");
     if (fp == NULL) {
         perror("Failed to run command");
         exit(EXIT_FAILURE);
